@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(231, 178, 215);
+
+}
+.open{
+    color: white;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+h1:hover{
+    color: black;
+    
+}
+#list{
+    text-align: center;
+}
+div ol{
+    display: inline-block;
+    width: 18%;
+     text-align: left;
+     font-weight: bold;
+
+}
+h2{
+    padding-top: 30px;
+    font-size: 26px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 12%;
+    text-align: center;
+}
+img{
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+footer{
+    padding-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
