@@ -104,7 +104,7 @@ footer {
 
 .home-title {
     color: black;
-    font-family: "Bubblegum Sans";
+    font-family: "Bubblegum Sans" Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
@@ -115,7 +115,7 @@ h4 {
 
 .msg h2 {
     color: #d9e4ea;
-    font-family: "Bubblegum Sans";
+    font-family: "Bubblegum Sans" Helvetica, sans-serif;
 
 }
 
