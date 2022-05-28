@@ -172,28 +172,28 @@
 }
 
 .red5 {
-  width: 60%;
+  width: 70%;
   height: 100px;
   background-color: red;
 }
 
 .green5 {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: green;
   float: left;
 
 }
 
 .yellow5 {
-  width: 60%;
-  height: 250px;
+  width: 70%;
+  height: 200px;
   background-color: gold;
 
 }
 
 .blue5 {
-  width: 60%;
+  width: 70%;
   height: 100px;
   background-color: blue;
   
