@@ -278,20 +278,22 @@ nav {
 #hero2-box {
     grid-column: 1/3;
     margin-bottom: -9px;
-    
+
 
 
 }
 
 #hero2-img {
-    width: 100%;
-    
-    height: auto;
+    width: 90%;
+
+   
 }
 
 .hero-information {
-    align-self: center;
+    margin-left: -50px;
+    text-align: center;
     align-items: center;
+    align-self : center;
     grid-column: 3/4;
     width: 100%;
 
@@ -300,10 +302,11 @@ nav {
 .hero-information h1 {
     font-family: "Bubblegum Sans", Helvetica, sans-serif;
     font-size: 3em;
+    
 }
 
 .hero-information p {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 #tours {
@@ -313,6 +316,7 @@ nav {
 
 
 .grand_canyon {
+    padding: 25px;
     border-radius: 25px;
     background-color: #0c4168;
     margin-top: 30px;
@@ -323,13 +327,18 @@ nav {
 }
 
 .grand_canyon_img {
-    padding: 40px;
+   
     grid-column: 1/2;
     grid-row: 1/3;
-    width: 100%;
-   
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    box-shadow: 5px 5px 10px #fae072;
 }
+
+
+
 
 .grand_canyon_info {
     padding: 15px;
@@ -342,6 +351,7 @@ nav {
 }
 
 .salmon_river {
+    padding: 25px;
     border-radius: 25px;
     background-color: #0c4168;
     margin-top: 30px;
@@ -352,10 +362,14 @@ nav {
 }
 
 .salmon_river_img {
-    padding: 40px;
+  
     grid-column: 1/2;
     grid-row: 1/3;
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    box-shadow: 5px 5px 10px #fae072;
 }
 
 .salmon_river_info {
@@ -369,6 +383,7 @@ nav {
 
 
 .desolation {
+    padding: 25px;
     border-radius: 25px;
     background-color: #0c4168;
     margin-top: 30px;
@@ -380,11 +395,14 @@ nav {
 }
 
 .desolation_img {
-    padding: 40px;
+    
     grid-column: 1/2;
     grid-row: 1/3;
-    width: 100%;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    box-shadow: 5px 5px 10px #fae072;
 }
 
 .desolation_info {
@@ -398,7 +416,7 @@ nav {
 }
 
 .tours h2 {
-    font-family: "Bubblegum Sans", Helvetica, sans-serif; 
+    font-family: "Bubblegum Sans", Helvetica, sans-serif;
     margin-top: 40px;
     margin-bottom: -20px;
     text-align: center;
@@ -410,42 +428,67 @@ nav {
     color: #fae072;
     text-align: center;
     font-weight: bold;
+    text-shadow: 4px 4px black;
 }
 
-.tours p{
+.tours p {
     padding: 30px;
     color: #d9e4ea;
 
 }
 
-.tours h2:hover{
-    color:#396E94;
+.tours h2:hover {
+    color:#0c4168;
+    text-shadow: 2px 2px #fae072;
+    opacity: .8;
+    transform: scale(1.2);
 
 }
 
 
 
 
+
+
 @media screen and (max-width: 900px) {
-    .tours p{
+    .tours p {
         margin-top: -50px;
         font-size: 12px;
-        
+
     }
-    #content2 h3{
-        margin-top: 3px;
+    
+    #hero2-img{
+        height: 100%;
+    }
+
+    #hero2-box{
+        height: 100%;
+    }
+
+    #content2 h3 {
+        margin-top: -35px;
         padding: 15px;
         font-size: 20px;
     }
 
-    #content2 h1{
-        
+    #content2 h1 {
+        margin-left: 30px;
         font-size: 25px;
     }
 
-    .hero-information p{
+    .hero-information p {
+       margin-top: -20px;
+       margin-left: 40px;
         font-size: 13px;
+      
+        
     }
+    .grand_canyon,
+    .salmon_river,
+    .desolation{
+        height : 250px;
+    }
+   
 
     #hero,
     .home-grid {
@@ -496,7 +539,7 @@ nav {
     #her2-img,
     .grand_canyon_img,
     .desolation_img,
-    .salmon_river_img{
+    .salmon_river_img {
         width: 100%;
         display: block;
         margin: 0 auto;
