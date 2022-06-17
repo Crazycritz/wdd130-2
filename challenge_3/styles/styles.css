@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
-body {
+
+#content {
     width: 300px;
+    background-color: white;
     margin: 0 auto;
     font-family: "Roboto Slab", Helvetica, sans-serif;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+body {
+    background-color: #181717;
 
 }
 
 #img {
-
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    display: block;
+    border-color: #181717;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  
+    
 }
 
 .time {
@@ -45,8 +58,9 @@ footer {
     justify-items: center;
     align-items: center;
     grid-column: 1/4;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
 
 }
 
