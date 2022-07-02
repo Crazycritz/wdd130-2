@@ -26,13 +26,16 @@ nav a {
     text-decoration: none;
     padding: 35px;
     width: 100px;
+    font-size: 1.5em;
+    transition: transform .5s;
 
 }
 
 nav a:hover {
-    background-color: #E8D3B9;
+    background-color: #D4AC0D;
     color: #26190C;
-
+    font-weight: bolder;
+    
 }
 
 nav {
@@ -71,6 +74,8 @@ header {
     margin-top: -25px;
     border-radius: 5px;
     border: 1px solid black;
+    transition: transform .5s;
+
 
 }
 
@@ -78,6 +83,19 @@ header {
     color: black;
     text-decoration: none;
     font-weight: bold;
+    transition: transform .5s;
+
+}
+
+.book:hover {
+
+    transform: scale(1.2);
+    text-decoration: underline;
+
+}
+
+.button-box:hover {
+    transform: scale(1.2);
 
 }
 
@@ -97,6 +115,7 @@ footer {
 
 .socials a {
     padding: 10px;
+    text-decoration: none;
 }
 
 footer h3 {
@@ -143,6 +162,7 @@ footer h3 {
     font-family: "Bubblegum Sans", Helvetica, sans-serif;
     font-size: 4em;
     margin-top: 10px;
+    text-shadow: 2px 2px red;
 }
 
 .profile {
@@ -196,7 +216,7 @@ footer h3 {
     text-align: center;
     background-color: #26190C;
     margin-top: 20px;
-    color: white;
+    color: #D4AC0D;
 
 
 }
@@ -276,7 +296,7 @@ footer h3 {
 
 
 @media screen and (max-width: 900px) {
-    
+
 
     #hero {
         display: block;
@@ -292,14 +312,15 @@ footer h3 {
         display: block;
         padding: 15px;
         width: 100%;
-        
+
     }
 
-    .logo-img{
-        margin-top: 30px;
+    .logo-img {
+        margin-top: 40px;
+        margin-left: -40px;
     }
 
-    .hero-img{
+    .hero-img {
         height: 350px;
     }
 
@@ -311,35 +332,33 @@ footer h3 {
         margin-top: 0;
     }
 
-    #hero-msg h4 {
-        display: none;
-    }
 
-   .title {
+    .title {
         font-size: 25px;
         padding-bottom: 10px;
         font-size: 2em;
-        
-        
+
+
     }
-    .profile h2{
+
+    .profile h2 {
         font-size: 2em;
     }
 
-    .profile h3{
+    .profile h3 {
         font-size: 1.5em;
     }
 
-    .profile p{
+    .profile p {
         font-size: 1em;
     }
 
-    .me{
-       margin-left: -65px;
-       margin-top: -30px;
+    .me {
+        margin-left: -65px;
+        margin-top: -30px;
     }
 
-    .pictures h2{
+    .pictures h2 {
         font-size: 2em;
     }
 
