@@ -20,6 +20,12 @@ h3 {
 
 }
 
+#content2 {
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
 nav a {
     text-align: center;
     color: #D4AC0D;
@@ -35,7 +41,7 @@ nav a:hover {
     background-color: #D4AC0D;
     color: #26190C;
     font-weight: bolder;
-    
+
 }
 
 nav {
@@ -109,6 +115,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: #26190C;
+    border: 5px solid black;
 
 
 }
@@ -156,14 +163,50 @@ footer h3 {
     height: 900px;
 }
 
+#hero-2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero2-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+
+}
+
+#hero2-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 150px;
+
+}
+
+.hero2-img {
+    width: 100%;
+    height: 900px;
+}
+
 .title {
     color: black;
     text-align: center;
     font-family: "Bubblegum Sans", Helvetica, sans-serif;
     font-size: 4em;
     margin-top: 10px;
-    text-shadow: 2px 2px red;
+    text-shadow: 2px 2px #E8D3B9;
 }
+
+.title2 {
+    color: #26190C;
+    text-align: center;
+    font-family: "Bubblegum Sans", Helvetica, sans-serif;
+    font-size: 4em;
+    margin-top: -20px;
+    text-shadow: 2px 2px #E8D3B9;
+}
+
+
 
 .profile {
     width: 100%;
@@ -172,6 +215,7 @@ footer h3 {
     text-align: center;
     background-color: #fae072;
     margin-top: 10px;
+
 
 
 }
@@ -188,24 +232,57 @@ footer h3 {
 .me:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.75s;
-  
+
     /* When the animation is finished, start again */
     animation-iteration-count: 2;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 .me {
     margin: 0 auto;
     grid-column: 2/4;
@@ -315,11 +392,233 @@ footer h3 {
 
 }
 
+.family-card {
+    background-color: #D4AC0D;
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.family-box {
+    background-color: #26190C;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.family-box h3 {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.family-card h2 {
+    padding-top: 30px;
+    font-size: 3.5em;
+    text-decoration: underline;
+}
+
+.family2-pic {
+    border: 10px solid black;
+    transition: transform .5s;
+
+}
+
+.family-card p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+
+
+.wedding-card {
+    background-color: #26190C;
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.wedding-box {
+    background-color: #D4AC0D;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+.wedding-box h3 {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.wedding-card h2 {
+    padding-top: 30px;
+    font-size: 3em;
+}
+
+.wedding2-pic {
+    border: 10px solid black;
+    transition: transform .5s;
+
+}
+
+.wedding-card p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #D4AC0D;
+}
+
+
+.school-card {
+    background-color: #D4AC0D;
+    margin-top: 20px;
+    text-align: center;
+    border: 5px solid black;
+}
+
+.school-box {
+    background-color: #26190C;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.school-box h3 {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.school-card h2 {
+    padding-top: 30px;
+    font-size: 3em;
+}
+
+.school2-pic {
+    border: 10px solid black;
+    transition: transform .5s;
+
+}
+
+.school-card p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.school2-pic:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.wedding2-pic:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.family2-pic:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+
+.family-box:hover,.wedding-box:hover,.school-box:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.75s;
+    
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: 2;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
 
 
     #hero {
+        display: block;
+        height: auto;
+    }
+
+    #hero2 {
         display: block;
         height: auto;
     }
@@ -345,7 +644,15 @@ footer h3 {
         height: 350px;
     }
 
+    .hero2-img{
+        height: 450px;
+    }
+
     #hero {
+        margin-top: 0;
+    }
+
+    #hero2{
         margin-top: 0;
     }
 
@@ -354,7 +661,7 @@ footer h3 {
     }
 
 
-    .title {
+    .title, .title2 {
         font-size: 25px;
         padding-bottom: 10px;
         font-size: 2em;
@@ -387,4 +694,34 @@ footer h3 {
     footer {
         margin-top: 25px;
     }
+
+    .family-card h2{
+        font-size: 2em;
+    }
+
+    .family-card h3{
+        font-size: 1.5em;
+    }
+    .wedding-card h3{
+        font-size: 1.5em;
+    }
+    .school-card h3{
+        font-size: 1.5em;
+    }
+
+    .family-card p{
+        font-size: 1em;
+    }
+    .wedding-card p{
+        font-size: 1em;
+    }
+    .school-card p{
+        font-size: 1em;
+    }
+
+    .family2-pic, .wedding2-pic, .school2-pic{
+        height: 250px;
+    }
+
+
 }
